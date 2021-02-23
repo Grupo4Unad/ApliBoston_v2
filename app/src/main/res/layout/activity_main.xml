@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/gradiente"
+    android:paddingHorizontal="30dp"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
+        android:textColor="#0B0B61"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Iniciar Sesión">
+    </TextView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+        <EditText
+            android:id="@+id/et_mail"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="Coloque su  Email"
+            android:textColorHint="#0B0B61"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="60dp"
+            android:textSize="14dp"
+            android:background="@drawable/recangular_fila"/>
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/email_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Coloque su Contaseña"
+        android:textColorHint="#0B0B61"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="60dp"
+        android:textSize="14dp"
+        android:background="@drawable/recangular_fila"/>
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/pass_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"/>
+   </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:textColor="#fff"
+        android:text="Login"
+        android:background="@drawable/macliza"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:textSize="30dp"
+        android:textStyle="bold">
+    </Button>
+    <Button
+        android:id="@+id/btn_recuperar"
+        android:textColor="#fff"
+        android:text="olvidó su contraseña?"
+        android:background="@drawable/macliza"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18dp"
+        android:textStyle="bold">
+    </Button>
+    <Button
+        android:id="@+id/btn_registrar"
+        android:textColor="#fff"
+        android:text="No tengo una cuenta"
+        android:background="@drawable/macliza"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18dp"
+        android:textStyle="bold">
+    </Button>
+</LinearLayout>

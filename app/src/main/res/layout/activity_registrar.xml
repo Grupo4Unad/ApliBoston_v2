@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/gradiente"
+    android:paddingHorizontal="30dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textSize="40sp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:text="Registrar cuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"/>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="40dp">
+
+    <EditText
+        android:id="@+id/et_mail"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Coloque su  Email"
+        android:textColorHint="#0B0B61"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="60dp"
+        android:textSize="14dp"
+        android:background="@drawable/recangular_fila"/>
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/email_icon"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"/>
+  </RelativeLayout>
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="40dp">
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Coloque password"
+        android:textColorHint="#0B0B61"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="60dp"
+        android:textSize="14dp"
+        android:background="@drawable/recangular_fila"/>
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/pass_icon"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"/>
+  </RelativeLayout>
+  <Button
+      android:id="@+id/btn_registrar"
+      android:textColor="#fff"
+      android:text="Registrar"
+      android:background="@drawable/macliza"
+      android:layout_width="250dp"
+      android:layout_height="60dp"
+      android:layout_marginTop="30dp"
+      android:textSize="20dp"
+      android:textStyle="bold">
+  </Button>
+</LinearLayout>
